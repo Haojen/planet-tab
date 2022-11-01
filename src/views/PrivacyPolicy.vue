@@ -1,5 +1,5 @@
 <template>
-    <main class="text-white flex flex-col items-center justify-center">
+    <main class="flex flex-col items-center justify-center">
         <header class="relative my-6">
             <img src="../assets/icon-browser-256.png" style="width: 90px">
             <div class="bg-gradient-to-b from-yellow-400 to-yellow-500 shadow rounded-2xl p-2 flex justify-center items-center absolute right-0 bottom-0" style="transform: translate(25%, 25%)">

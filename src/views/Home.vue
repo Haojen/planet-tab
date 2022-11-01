@@ -9,7 +9,7 @@
 }
 </style>
 <template>
-    <main class="w-full h-full home text-white">
+    <main class="w-full h-full home">
         <Planet class="absolute pointer-events-none"/>
         <article class="relative z-10 w-full h-full flex flex-col justify-center items-center">
             <header class="flex justify-center items-center mb-4" style="margin-top: -100px;">
