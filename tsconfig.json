@@ -9,6 +9,7 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
+    "strictPropertyInitialization": false,
     "useDefineForClassFields": true,
     "sourceMap": true,
     "baseUrl": ".",
