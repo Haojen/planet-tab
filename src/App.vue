@@ -1,7 +1,29 @@
+<style>
+#app {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+
+    background: black;
+    background: url('./assets/2k_stars.webp');
+}
+
+.fade-enter-active,
+.fade-leave-active{
+    transition: opacity .18s ease-in;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
+</style>
 <template>
     <div class="flex flex-col w-screen h-screen">
-        <router-view class="flex-1 text-white"/>
-        <footer class="flex flex-col justify-center items-center font-bold text-white">
+        <transition name="fade">
+            <router-view class="flex-1 text-white"/>
+        </transition>
+        <footer class="flex flex-col justify-center items-center font-bold text-white mb-4">
             <div class="flex justify-center items-center">
                 <router-link to="/" class="mx-2 border-b-4 border-transparent" :class="routerTargetName === 'home' && 'border-blue-600'">Home</router-link>
                 <router-link to="help" class="mx-2 border-b-4 border-transparent" :class="routerTargetName === 'help' && 'border-blue-600'">Help</router-link>
@@ -20,12 +42,3 @@
 <script lang="ts" setup>
 import { routerTargetName } from "@/reactiveConsts";
 </script>
-<style>
-
-#app {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-}
-
-</style>

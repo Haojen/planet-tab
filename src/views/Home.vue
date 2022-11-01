@@ -3,10 +3,6 @@
     font-family: Prisma;
     src: url("../assets/Azonix.otf");
 }
-.home {
-    background: black;
-    background: url('../assets/2k_stars.webp')
-}
 </style>
 <template>
     <main class="w-full h-full home">
