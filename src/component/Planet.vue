@@ -10,12 +10,10 @@ import config from './earth.config'
 interface IProps {
     width?: number
     height?: number
-    autoResize: boolean
     rotationSpeed: number
 }
 
 const props = withDefaults(defineProps<IProps>(), {
-    autoResize: true,
     rotationSpeed: 0.001,
 })
 const planetContainerEl = ref<HTMLDivElement>()
@@ -135,7 +133,7 @@ class Planet {
             z: cameraPosition.cameraPositionZ,
         })
 
-        props.autoResize && window.addEventListener('resize',  () => {
+        window.addEventListener('resize',  () => {
             camera.aspect = window.innerWidth / window.innerHeight
             camera.updateProjectionMatrix()
             this.renderer.setSize(window.innerWidth, window.innerHeight)

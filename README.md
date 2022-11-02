@@ -1,19 +1,48 @@
-# planet-tab
+<br/>  
+<div align="center">
+   <img src="./src/assets/icon-browser-256.png" alt="" width="128">
+</div>
 
-## Project setup
-```
-npm install
-```
+<h2 align="center">
+  <strong>Planet Tab</strong>
+</h2> 
+<p align="center">
+  A cool dynamic 3D planet new tab, support Search, Clock, Weather and custom,
+                also compatible with <a class="text-blue-500" target="_blank" href="https://haojen.github.io/vimkey/#/">Vimkey</a>
+</p>
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+[//]: # (<p align="center">)
 
-### Compiles and minifies for production
-```
-npm run build
-```
+[//]: # (  <span>English</span> | <a href="/README-zh.md">简体中文</a>)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+[//]: # (</p>)
+
+<br>
+
+[//]: # (<p align="center">)
+
+[//]: # (    <a href="https://chrome.google.com/webstore/detail/vimkey/eeeandejdamjifbgmmmmonggidbccnnj">)
+
+[//]: # (        <img src="./src/assets/chrome-webstore.svg" width="210">)
+
+[//]: # (    </a>)
+
+[//]: # (</p>)
+
+<p align="center">
+    <a href="https://itunes.apple.com/app/id1585682577">
+        <img src="./src/assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" width="140">
+    </a>
+    <a href="https://itunes.apple.com/app/id1585682577">
+        <img src="./src/assets/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_wht_092917.svg" width="184" style="margin-left: 4px;">
+    </a>
+</p>
+
+
+<h2>About</h2>
+
+As an indie developer, this is my only source of income, which is why your support means so much to me, and it's a great encourage.
+
+Star, share, comment, feedback, buy me coffee, etc.
+
+Copyright © HAOZHEN MA 2022
