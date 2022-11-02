@@ -34,7 +34,7 @@
                 </a>
             </div>
             <div class="my-2 text-sm text-gray-500 font-semibold">
-                <span>Copyright © 2022 HAOZHEN MA</span>
+                <span>Copyright © {{ new Date().getFullYear() }} HAOZHEN MA</span>
             </div>
         </footer>
     </div>

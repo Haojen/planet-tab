@@ -8,20 +8,15 @@ import {onMounted, ref} from "vue";
 import config from './earth.config'
 
 interface IProps {
-    planet?: IPlanet.Planets
     width?: number
     height?: number
     autoResize: boolean
     rotationSpeed: number
-    position: IPlanet.Position
-    performance?: IConfigs.PlanetPerformance
 }
 
 const props = withDefaults(defineProps<IProps>(), {
     autoResize: true,
     rotationSpeed: 0.001,
-    position: 'top',
-    performance: "high",
 })
 const planetContainerEl = ref<HTMLDivElement>()
 
@@ -74,52 +69,7 @@ class Planet {
         top: {
             cameraPositionY: -1.15,
             cameraPositionZ: 2
-        },
-        center: {
-            cameraPositionY: 0.6,
-            cameraPositionZ: 4 // + 10
-        },
-        // When Search 、Weather、Dock bar widget is hidden
-        center2: {
-            cameraPositionY: 0.45,
-            cameraPositionZ: 3.5
-        },
-        // 没有小部件的居中
-        center3: {
-            cameraPositionY: 0.25,
-            cameraPositionZ: 3.5
-        },
-        // 专门为 setting 提供的预览配置
-        absoluteCenter: {
-            cameraPositionY: 0,
-            cameraPositionZ: 4
-        },
-        bottom: {
-            cameraPositionY: 1.15,
-            cameraPositionZ: 2
-        },
-        bottom2: {
-            cameraPositionY: 1,
-            cameraPositionZ: 2
         }
-    }
-    public switchPosition() {
-        const animateDuration = 600
-        const animateEasing: anime.EasingOptions = 'easeOutCubic'
-
-        const {cameraPositionY, cameraPositionZ} = this.getCameraPosition()
-
-        anime({
-            easing: animateEasing,
-            duration: animateDuration,
-            targets: this.camera.position,
-            y: cameraPositionY,
-            z: cameraPositionZ,
-        })
-    }
-
-    public getCameraPosition() {
-        return Planet.position[props.position]
     }
 
     light: THREE.Light
@@ -133,22 +83,16 @@ class Planet {
         const width = props.width ?? window.innerWidth
         const height =  props.height ?? window.innerHeight
 
-        this.renderer = new THREE.WebGLRenderer({
-            precision: 'lowp',
-            powerPreference: 'low-power',
-            alpha: true,
-            antialias: true
-        })
+        this.renderer = new THREE.WebGLRenderer({ alpha: true })
 
         const scene = this.rootScene = new THREE.Scene()
         scene.background = new THREE.Color(0x000)
-        // scene.background = new THREE.TextureLoader().load('../images/stars-background.jpg')
         scene.background = new THREE.TextureLoader().load('../images/2k_stars.jpg')
 
         this.createSphere()
         this.createCloud()
 
-        const cameraPosition = this.getCameraPosition()
+        const cameraPosition = Planet.position.top
         const camera = this.camera = new THREE.PerspectiveCamera(50, width / height)
         camera.position.set(0, cameraPosition.cameraPositionY, cameraPosition.cameraPositionZ + 0.1)
 
@@ -199,28 +143,9 @@ class Planet {
 
         this.renderer.setPixelRatio(window.devicePixelRatio)
         this.renderer.setSize(width, height)
-        el.appendChild(this.renderer.domElement)
+        el?.appendChild(this.renderer.domElement)
     }
 }
 
-onMounted(() => {
-    const planetInstance = new Planet()
-    planetInstance.init()
-
-    document.addEventListener('visibilitychange', () => {
-        if (document.visibilityState === 'hidden') {
-            cancelAnimationFrame(planetInstance.requestAnimationFrameId)
-            return
-        }
-
-        if (document.visibilityState === 'visible') {
-            if (planetInstance.renderer.getContext().isContextLost()) {
-                window.location.reload()
-            }
-            else {
-                planetInstance.runAnimationFrame()
-            }
-        }
-    })
-});
+onMounted(() => new Planet().init());
 </script>
