@@ -1,4 +1,4 @@
-import {createRouter, createWebHistory, RouteRecordRaw} from 'vue-router'
+import {createRouter, RouteRecordRaw, createWebHashHistory} from 'vue-router'
 import HomeView from './views/Home.vue'
 import { routerTargetName } from './reactiveConsts'
 
@@ -21,12 +21,11 @@ const routes: Array<RouteRecordRaw> = [
 ]
 
 const router = createRouter({
-    history: createWebHistory(process.env.BASE_URL),
+    history: createWebHashHistory(process.env.BASE_URL),
     routes
 })
 
 router.beforeEach((to, from) => {
-    console.log(to.name)
     routerTargetName.value = to.name as string
 })
 
