@@ -84,8 +84,6 @@ class Planet {
         this.renderer = new THREE.WebGLRenderer({ alpha: true })
 
         const scene = this.rootScene = new THREE.Scene()
-        scene.background = new THREE.Color(0x000)
-        scene.background = new THREE.TextureLoader().load('../images/2k_stars.jpg')
 
         this.createSphere()
         this.createCloud()
