@@ -39,10 +39,8 @@
 </p>
 
 <p align="center">
-    <img src="./src/assets/macOS-mars.png" alt="">
-    <img src="./src/assets/macOS-jupiter.png" alt="">
-    <img src="./src/assets/macOS-earth.png" alt="">
-    <img src="./src/assets/macOS-neptune.png" alt="">
+    <img src="./src/assets/macOS-earth.jpg" alt="" style="border-radius: 8px">
+    <img src="./src/assets/macOS-mars.jpg" alt="" style="border-radius: 8px">
 </p>   
 
 
