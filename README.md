@@ -30,13 +30,20 @@
 [//]: # (</p>)
 
 <p align="center">
-    <a href="https://itunes.apple.com/app/id1585682577">
+    <a href="https://itunes.apple.com/app/id6444109404">
         <img src="./src/assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" width="140">
     </a>
-    <a href="https://itunes.apple.com/app/id1585682577">
+    <a href="https://itunes.apple.com/app/id6444109404">
         <img src="./src/assets/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_wht_092917.svg" width="184" style="margin-left: 4px;">
     </a>
 </p>
+
+<p align="center">
+    <img src="./src/assets/macOS-mars.png" alt="">
+    <img src="./src/assets/macOS-jupiter.png" alt="">
+    <img src="./src/assets/macOS-earth.png" alt="">
+    <img src="./src/assets/macOS-neptune.png" alt="">
+</p>   
 
 
 <h2>About</h2>
