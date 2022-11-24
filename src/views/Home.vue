@@ -16,14 +16,11 @@
                     A cool dynamic 3D planet new tab, support Search, Clock, Weather and custom,
                     also compatible with <a class="text-blue-500" target="_blank" href="https://haojen.github.io/vimkey/#/">Vimkey</a>
             </h2>
-            <section class="mt-12 mx-2 flex justify-center items-center">
+            <section class="mt-12 mx-2 flex justify-center items-center flex-wrap">
                 <a :href="appleDownloadURL">
                     <img style="height: 46px;" src="../assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="">
                 </a>
-                <a class="mx-4" :href="appleDownloadURL">
-                    <img style="height: 46px;" src="../assets/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_wht_092917.svg" alt="">
-                </a>
-                <a :href="chromeDownloadURL">
+                <a class="mx-4 my-4" :href="chromeDownloadURL">
                     <img class="rounded-lg bg-white" style="height: 45px;" src="../assets/chrome-webstore.svg" alt="">
                 </a>
             </section>
@@ -35,5 +32,5 @@
 import Planet from '@/component/Planet.vue'
 
 const appleDownloadURL = 'itms-apps://itunes.apple.com/app/id6444109404'
-const chromeDownloadURL = ''
+const chromeDownloadURL = 'https://chrome.google.com/webstore/detail/planet-tab/jcedhcihkblmpjhkbjobchnonaackgjl'
 </script>

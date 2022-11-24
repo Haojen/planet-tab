@@ -19,15 +19,11 @@
 
 <br>
 
-[//]: # (<p align="center">)
-
-[//]: # (    <a href="https://chrome.google.com/webstore/detail/vimkey/eeeandejdamjifbgmmmmonggidbccnnj">)
-
-[//]: # (        <img src="./src/assets/chrome-webstore.svg" width="210">)
-
-[//]: # (    </a>)
-
-[//]: # (</p>)
+<p align="center">
+    <a href="https://chrome.google.com/webstore/detail/planet-tab/jcedhcihkblmpjhkbjobchnonaackgjl">
+        <img src="./src/assets/chrome-webstore.svg" width="210">
+    </a>
+</p>
 
 <p align="center">
     <a href="https://itunes.apple.com/app/id6444109404">
