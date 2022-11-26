@@ -35,8 +35,9 @@
 </p>
 
 <p align="center">
-    <img src="./src/assets/macOS-earth.jpg" alt="" style="border-radius: 8px">
     <img src="./src/assets/macOS-mars.jpg" alt="" style="border-radius: 8px">
+    <img src="./src/assets/macOS-earth.jpg" alt="" style="border-radius: 8px">
+    <img src="./src/assets/macOS-jupiter-1280.jpg" alt="" style="border-radius: 8px">
 </p>   
 
 
@@ -45,5 +46,8 @@
 As an indie developer, this is my only source of income, which is why your support means so much to me, and it's a great encourage.
 
 Star, share, comment, feedback, buy me coffee, etc.
+
+## Buy me coffee ☕️
+<img src="./src/assets/BuyMeCoffeeQRCode.png" width="300">
 
 Copyright © HAOZHEN MA 2022
